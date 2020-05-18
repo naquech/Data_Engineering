@@ -24,16 +24,41 @@ The purpose is to create a Postgres database with tables designed to optimize qu
 
 ### Dimension Tables
 
-| *artists* |Column Type ||| *users*   |Column type ||| *time*    | Column Type ||| *songs*  | Column type
-| :---      | :----      ||| :----     | :---       ||| :----     | :---        ||| :----    | :--- 
-| artist_id | text       ||| user_id   | int        ||| start_time| timestamp   ||| song_id  | text
-| name      | text       ||| first_name| text       ||| hour      | int         ||| title    | text
-| location  | text       ||| last_name | text       ||| day       | int         ||| artist_id| text
-| latitude  | float      ||| gender    | text       ||| week      | int         ||| year     | int
-| longitude | float      ||| level     | text       ||| month     | int         ||| duration | float
-|           |            |||           |            ||| year      | int         |||          |
-|           |            |||           |            ||| weekday   | int         |||          |
-|           |            |||           |            |||           |             |||          |
+| *artists* |Column Type 
+| :---      | :----      
+| artist_id | text       
+| name      | text       
+| location  | text       
+| latitude  | float      
+| longitude | float      
+
+| *users*   |Column type 
+| :----     | :---       
+| user_id   | int        
+| first_name| text       
+| last_name | text       
+| gender    | text       
+| level     | text       
+
+
+| *time*    | Column Type 
+| :---      | :----             
+| start_time| timestamp   
+| hour      | int         
+| day       | int         
+| week      | int         
+| month     | int         
+| year      | int         
+| weekday   | int         
+
+| *songs*  | Column type
+|  :----    | :--- 
+|  song_id  | text
+|  title    | text
+|  artist_id| text
+|  year     | int
+| duration | float
+
 
 ## File Structure
 
